@@ -10,3 +10,13 @@ of each product include:
 * An image of the product
 * The colors available in the product
 
+### Requirements 
+* No requirements necessary 
+
+### Installation Instructions
+* Fork and clone 
+* Open index.html in the browser
+
+### Contributing 
+You can contribute by emailing makeupapp@mail.com.
+Fork and clone - make a PR
