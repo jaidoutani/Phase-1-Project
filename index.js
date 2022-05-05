@@ -64,5 +64,7 @@ function displayProduct(e) {
 }
 
 function clearAndReturn() {
-    
+    const info = document.getElementById('info')
+    info.innerHTML = ""
+    displayProducts()
 }
