@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function getMakeup() {
     fetch(BASE_URL)
-    .then(res => res.json())
-    .then(data => {
-        products = data
-        displayProducts()
-    })
+        .then(res => res.json())
+        .then(data => {
+            products = data
+            displayProducts()
+        })
 }
 
 function displayProducts() {
@@ -27,6 +27,21 @@ function displayProducts() {
     })
 }
 
-function displayProduct() {
-    
+function displayProduct(e) {
+    const ul = document.getElementById('brand-list')
+    const info = document.getElementById('info')
+    info.innerHTML = ""
+    ul.innerHTML = ""
+    const product = products.find(p => p.id === parseInt(e.target.id))
+    info.innerHTML = `
+        <h1>${product.brand}</h1>
+        <h3>Name:</h3>
+        <p>${product.name}</p>
+        <h3>Description:</h3>
+        <p>${product.description}</p>
+        <h3>Price:</h3>
+        <p>${product.price_sign}${product.price}</p>
+        <h3>Product link:</h3>
+        <p><a href="${product.product_link}">Click</a></p>
+        `
 }
