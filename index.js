@@ -23,5 +23,10 @@ function displayProducts() {
         a.href = '#'
         a.id = product.id
         li.appendChild(a)
+        a.addEventListener('click', displayProduct)
     })
+}
+
+function displayProduct() {
+    
 }
