@@ -44,5 +44,20 @@ function displayProduct(e) {
         <h3>Product link:</h3>
         <p><a href="${product.product_link}">Click</a></p>
         <img src=${product.image_link}>
-        `
+        <h3>Colors:</h3>`
+    const product_colors = document.createElement('ul')
+    for (let i = 0; i < product.product_colors.length; i++) {
+        let color_hex = product.product_colors[i].hex_value
+        let color_name = product.product_colors[i].colour_name
+        product_colors.id = "colors"
+        let li = document.createElement('li')
+        let span = document.createElement('span')
+        span.className = 'dot'
+        span.style.backgroundColor = color_hex
+        li.innerHTML += span.outerHTML
+        li.innerHTML += `  ${color_name}`
+        product_colors.appendChild(li)
+    }
+    info.appendChild(product_colors)
+
 }
