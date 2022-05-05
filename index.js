@@ -43,5 +43,6 @@ function displayProduct(e) {
         <p>${product.price_sign}${product.price}</p>
         <h3>Product link:</h3>
         <p><a href="${product.product_link}">Click</a></p>
+        <img src=${product.image_link}>
         `
 }
