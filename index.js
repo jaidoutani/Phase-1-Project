@@ -59,5 +59,5 @@ function displayProduct(e) {
         product_colors.appendChild(li)
     }
     info.appendChild(product_colors)
-
+    info.innerHTML += `<button id="back">Back</button>`
 }
