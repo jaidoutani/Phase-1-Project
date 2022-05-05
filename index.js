@@ -60,4 +60,9 @@ function displayProduct(e) {
     }
     info.appendChild(product_colors)
     info.innerHTML += `<button id="back">Back</button>`
+    document.getElementById('back').addEventListener('click', clearAndReturn)
+}
+
+function clearAndReturn() {
+    
 }
