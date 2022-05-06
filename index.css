@@ -26,3 +26,9 @@ body::before {
     border-radius: 50%;
     display: inline-block;
 }
+
+li {
+    font-style: italic;
+    font-family: sans-serif;
+    list-style: none;
+}
