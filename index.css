@@ -43,6 +43,12 @@ h1 {
     height: 30px;
 }
 
+h3 {
+    word-wrap: normal;
+    font-size: 26px;
+    height: 10px;
+}
+
 li {
     font-style: italic;
     font-family: sans-serif;
