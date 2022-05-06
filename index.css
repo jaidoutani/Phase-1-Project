@@ -53,3 +53,9 @@ button {
     font-size: 20px;
     justify-self: center;
 }
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    border: #ff76e5 solid 1px;
+    color: #ff76e5;
+}
