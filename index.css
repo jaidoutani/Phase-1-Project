@@ -59,3 +59,13 @@ button:hover {
     border: #ff76e5 solid 1px;
     color: #ff76e5;
 }
+
+.branding {
+    clear: both;
+}
+
+footer.branding {
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+}
