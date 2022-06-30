@@ -16,7 +16,7 @@ function getMakeup() {
 function displayProducts() {
     const ul = document.getElementById('brand-list')
     ul.addEventListener('mouseover', function (e){
-        e.target.style.color = 'pink'
+        e.target.style.color = '#ff76e5'
         setTimeout(function(){
             e.target.style.color = ''
         }, 100)
