@@ -61,6 +61,10 @@ li {
     list-style: none;
 }
 
+a:hover {
+    color:pink
+}
+
 button {
     position: relative;
     background-color: #ff76e5;

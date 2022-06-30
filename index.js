@@ -15,6 +15,12 @@ function getMakeup() {
 
 function displayProducts() {
     const ul = document.getElementById('brand-list')
+    ul.addEventListener('mouseover', function (e){
+        e.target.style.color = 'pink'
+        setTimeout(function(){
+            e.target.style.color = ''
+        }, 100)
+    })
     products.forEach(product => {
         const li = document.createElement("li")
         ul.appendChild(li)
@@ -50,7 +56,7 @@ function displayProduct(e) {
         let color_hex = product.product_colors[i].hex_value
         let color_name = product.product_colors[i].colour_name
         product_colors.id = "colors"
-        let li = document.createElement('li')
+        let li = document.createElement('li') 
         let span = document.createElement('span')
         span.className = 'dot'
         span.style.backgroundColor = color_hex
